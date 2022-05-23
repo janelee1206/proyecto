@@ -15,9 +15,7 @@
   Font-size: 20px;
 }
 
-.logo{
-  text-align: left;
-}
+
 body{
   background-color:var(--grey);
   font-family: Source Sans Pro;
@@ -25,14 +23,21 @@ body{
   padding: 2rem;
 }
 
+.texto {
+  background: linear-gradient(white,silver);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 150%;
+}
 
 
 .header{
-   background: rgb(34, 193, 195);
+   background: rgb(195, 34, 123);
   background: linear-gradient(
     135deg,
-    rgba(34, 193, 195, 1) 23%,
-    rgba(253, 247, 45, 1) 100%
+    rgb(157, 34, 195) 23%,
+    rgb(253, 45, 159) 100%
   );
   position: sticky;
   top: 0;

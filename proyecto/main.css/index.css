@@ -4,28 +4,41 @@
   box-sizing: border-box;
 }
 body {
-  background: rgb(34, 193, 195);
+  background-color: var(--grey);
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  padding: 2rem;
+}
+
+.header {
+  background: rgb(195, 34, 123);
   background: linear-gradient(
     135deg,
-    rgba(34, 193, 195, 1) 23%,
-    rgba(253, 247, 45, 1) 100%
+    rgb(157, 34, 195) 23%,
+    rgb(253, 45, 159) 100%
   );
-  color: white;
-  font-weight: bold;
-  padding: 35px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 22px;
-  border-radius: 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  min-height: 11vh;
 }
+
+.centrado {
+  max-width: 570px;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
 img {
   display: flex;
   justify-content: center;
 }
 
 .texto {
-  background: linear-gradient(yellow, red);
+  background: linear-gradient(white, silver);
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
