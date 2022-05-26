@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --base-space: 1.25rem;
+  --white: #fcf9f9;
+  --black: #080808;
+  --grey: #464343;
+  --light-grey: #bbbbbb;
+}
+
 body {
   background-color: var(--grey);
   font-family: Source Sans Pro;
@@ -24,6 +33,7 @@ body {
   flex-flow: row wrap;
   align-items: center;
   min-height: 11vh;
+  padding: var(--base-space);
 }
 
 .centrado {
@@ -56,7 +66,7 @@ img {
 }
 /*--TITULO-----------------------*/
 .titulo {
-  color: #1d4169;
+  color: #dbdbdb;
   margin-bottom: 20px;
 }
 /*--CAJAS-DE-DATOS---------------*/
@@ -111,4 +121,27 @@ img {
 }
 .tengo-cuenta:hover {
   color: #dbdbdb;
+}
+
+footer {
+  background-color: var(--black);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 17vh;
+  border: 2px;
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+footer p {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  color: var(--white);
+}
+
+footer span {
+  color: red;
+  font-size: x-large;
 }

@@ -4,22 +4,44 @@
   box-sizing: border-box;
 }
 
+:root {
+  --base-space: 1.25rem;
+  --white: #fcf9f9;
+  --black: #080808;
+  --grey: #464343;
+  --light-grey: #bbbbbb;
+}
+
 body {
+  background-color: var(--grey);
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  padding: 2rem;
+}
+
+.header {
   background: rgb(195, 34, 123);
   background: linear-gradient(
     135deg,
     rgb(157, 34, 195) 23%,
     rgb(253, 45, 159) 100%
   );
-  color: white;
-  font-weight: bold;
-  padding: 35px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 22px;
-  border-radius: 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  min-height: 11vh;
+  padding: var(--base-space);
 }
+
+.centrado {
+  max-width: 570px;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
 .texto {
   background: linear-gradient(white, silver);
   -webkit-background-clip: text;
@@ -28,26 +50,50 @@ body {
   font-size: 150%;
 }
 
+/*--CAJAS-DE-DATOS---------------*/
+.cajas {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  border: none;
+  border-left: 10px solid #d9e4ea;
+  transition: all 0.5s ease;
+}
+.cajas:hover,
+.cajas:focus {
+  border-left: 10px solid #1a4c7e;
+}
+
 img {
   display: flex;
   justify-content: center;
 }
-.eye {
+.eyes {
   position: absolute;
-  height: 500px;
-  width: 500px;
-  top: -40px;
-  left: 530px;
+  height: 300px;
+  width: 300px;
+  top: 120px;
+  left: 280px;
   z-index: 1;
 }
 
 .heaven {
   position: absolute;
-  height: 300px;
-  width: 300px;
-  left: 630px;
-  top: 200px;
+  height: 200px;
+  width: 200px;
+  left: 330px;
+  top: 250px;
   z-index: -1;
+}
+
+.amor {
+  position: absolute;
+  height: 450px;
+  width: 570px;
+  left: -20px;
+  top: 45px;
+  z-index: -2;
 }
 
 form {
